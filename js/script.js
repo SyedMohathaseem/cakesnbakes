@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageMap = {
       'cakes.html': 'cakes.html',
       'brownies.html': 'brownies.html',
+      'menu.html': 'menu.html',
+      'gallery.html': 'gallery.html',
       'index.html': null  // handled by scroll
     };
 
@@ -92,7 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateActiveNav() {
     if (currentPage !== 'index.html' && currentPage !== '') return;
 
-    const scrollPos = window.scrollY + 150;
+    const isMobile = window.innerWidth < 992;
+    const scrollPos = window.scrollY + (isMobile ? 200 : 150);
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
@@ -205,6 +208,78 @@ document.addEventListener('DOMContentLoaded', () => {
       description: 'Luxurious 3-tier white cake with pink peonies, pearl cascades, and a golden "Engaged" ring topper.',
       price: '₹1,000',
       image: 'img/IMG-20260112-WA0017.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0025.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0026.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0027.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0028.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0029.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0030.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0018.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0019.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0020.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0021.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0022.jpg'
+    },
+    {
+      name: 'Elegant Custom Cake',
+      description: 'A beautifully crafted custom cake for special celebrations.',
+      price: '₹1,200',
+      image: 'img/IMG-20260112-WA0023.jpg'
     }
   ];
 
@@ -213,49 +288,52 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Nutella Brownie',
       description: 'Rich, fudgy Nutella brownie dripping with hazelnut chocolate goodness — irresistibly indulgent!',
       price: '₹1,400',
-      image: 'img/1771153087995.png'
+      image: 'img/Nutella Brownie.png'
     },
     {
       name: 'Nutella & Biscoff Brownie',
       description: 'Loaded with creamy Nutella & crunchy Biscoff spread inside a deep cocoa batter — pure bliss.',
       price: '₹1,400',
-      image: 'img/1771152907690.png'
+      image: 'img/Nutella & Biscoff Brownie.jpg'
     },
     {
       name: 'Triple Chocolate Brownie & Blondies',
       description: 'The ultimate indulgence — dark, milk, and white chocolate fused into fudgy brownies and golden blondies.',
       price: '₹1,400',
-      image: 'img/1771152758090.png'
+      image: 'img/Triple Chocolate Brownie & Blondies.jpg'
     }
   ];
 
   // ---------- Menu Category Data ----------
   const cakesMenu = [
-    { name: 'Vanilla Cake', description: 'Classic vanilla sponge cake with smooth buttercream frosting.', price: '₹1,000', image: '' },
-    { name: 'Strawberry Cake', description: 'Fresh strawberry flavoured cake with a fruity, sweet finish.', price: '₹1,000', image: '' },
-    { name: 'Butterscotch Cake', description: 'Rich butterscotch cake with crunchy caramel praline topping.', price: '₹1,000', image: '' },
-    { name: 'Black Currant Cake', description: 'Tangy black currant cake with a deep berry flavour.', price: '₹1,000', image: '' },
-    { name: 'Chocolate Cake', description: 'Moist, rich chocolate cake for all chocolate lovers.', price: '₹1,200', image: '' },
-    { name: 'Chocolate Truffle Cake', description: 'Indulgent chocolate truffle cake with a velvety ganache finish.', price: '₹1,400', image: '' },
-    { name: 'Lotus Biscoff Cake', description: 'Creamy Lotus Biscoff cake with caramelised biscuit crumble.', price: '₹1,400', image: '' },
-    { name: 'Nutella Cake', description: 'Heavenly Nutella hazelnut cake with a chocolatey spread layer.', price: '₹1,400', image: '' },
-    { name: 'Blueberry Cake', description: 'Delicate blueberry cake with a burst of fresh berry flavour.', price: '₹1,000', image: '' }
+    { name: 'Vanilla Cake', description: 'Classic vanilla sponge cake with smooth buttercream frosting.', price: '₹1,000', image: 'img/Vanila cake.jpg' },
+    { name: 'Strawberry Cake', description: 'Fresh strawberry flavoured cake with a fruity, sweet finish.', price: '₹1,000', image: 'img/strawbery cake.jpg' },
+    { name: 'Butterscotch Cake', description: 'Rich butterscotch cake with crunchy caramel praline topping.', price: '₹1,000', image: 'img/Butterscoch cake.jpg' },
+    { name: 'Black Currant Cake', description: 'Tangy black currant cake with a deep berry flavour.', price: '₹1,000', image: 'img/Black Currant Cake.jpg' },
+    { name: 'Chocolate Cake', description: 'Moist, rich chocolate cake for all chocolate lovers.', price: '₹1,200', image: 'img/Chocolate Cake.jpg' },
+    { name: 'Chocolate Truffle Cake', description: 'Indulgent chocolate truffle cake with a velvety ganache finish.', price: '₹1,400', image: 'img/Chocolate Truffle Cake.jpg' },
+    { name: 'Lotus Biscoff Cake', description: 'Creamy Lotus Biscoff cake with caramelised biscuit crumble.', price: '₹1,400', image: 'img/Lotus Biscoff Cake.jpg' },
+    { name: 'Nutella Cake', description: 'Heavenly Nutella hazelnut cake with a chocolatey spread layer.', price: '₹1,400', image: 'img/Nutella Cake.jpg' },
+    { name: 'Blueberry Cake', description: 'Delicate blueberry cake with a burst of fresh berry flavour.', price: '₹1,000', image: 'img/Blueberry Cake.jpg' },
+    { name: 'Dream Cake', description: 'A blissful 5-in-1 torte dream cake that simply melts in your mouth.', price: '₹1,500', image: 'img/dream cakes.jpg' },
+    { name: 'Customised Cake', description: 'Specially crafted customised cakes tailored to your celebrations.', price: 'Starting from ₹1,000', image: 'img/customize cakes.jpg' }
   ];
 
   const cupCakes = [
-    { name: 'Cup Cake', description: 'Freshly baked cup cakes available in multiple delicious varieties.', price: '₹30', image: '' }
+    { name: 'Cup Cakes', description: 'Freshly baked cup cakes available in multiple delicious varieties.', price: '₹30', image: 'img/cup cakes.jpg' }
   ];
 
   const jarCakes = [
-    { name: 'Jar Cake', description: 'Layered jar cake with cream and sponge — perfect on the go!', price: '₹120', image: '' }
+    { name: 'Jar Cake', description: 'Layered jar cake with cream and sponge — perfect on the go!', price: '₹120', image: 'img/jar cake.jpg' }
   ];
 
   const chocolates = [
-    { name: 'Customised Chocolates', description: 'Beautifully customised chocolates for every occasion — perfect for gifting!', price: 'Starting from ₹130', image: '' }
+    { name: 'Chocolate Dates', description: 'Premium chocolate coated dates that taste incredible.', price: 'Starting from ₹130', image: 'img/chocolate dates.jpg' },
+    { name: 'Customised Chocolates', description: 'Beautifully customised chocolates for every occasion — perfect for gifting!', price: 'Starting from ₹130', image: 'img/customize chocolate.jpg' }
   ];
 
   const mousseCup = [
-    { name: 'Mousse Cup', description: 'Light, fluffy, and creamy mousse cups in irresistible flavours.', price: 'Starting from ₹40', image: '' }
+    { name: 'Mousse Cup', description: 'Light, fluffy, and creamy mousse cups in irresistible flavours.', price: 'Starting from ₹40', image: 'img/mouse cakes.jpg' }
   ];
 
   // ---------- Render Product Cards (with price + order button) ----------
@@ -320,6 +398,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---------- Dedicated Cakes Page: Product cards from cakesMenu ----------
+  const cakesProductGrid = document.getElementById('cakes-product-grid');
+  if (cakesProductGrid) {
+    cakesMenu.forEach((cake, i) => {
+      cakesProductGrid.innerHTML += createProductCard(cake, `reveal-delay-${(i % 5) + 1}`);
+    });
+  }
+
   // ---------- Dedicated Pages ----------
   const allGalleryGrid = document.getElementById('all-gallery-grid');
   if (allGalleryGrid) {
@@ -335,23 +421,81 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---------- Menu Page: Render all categories ----------
-  const menuCategories = [
-    { id: 'cakes-menu-grid', data: cakesMenu },
-    { id: 'cupcakes-grid', data: cupCakes },
-    { id: 'jarcakes-grid', data: jarCakes },
-    { id: 'chocolates-grid', data: chocolates },
-    { id: 'mousse-grid', data: mousseCup }
-  ];
+  // ---------- Menu Page: Category Containers ----------
+  const menuCategoryGrid = document.getElementById('menu-category-grid');
+  const menuExpandedArea = document.getElementById('menu-expanded-area');
 
-  menuCategories.forEach(cat => {
-    const grid = document.getElementById(cat.id);
-    if (grid) {
-      cat.data.forEach((item, i) => {
-        grid.innerHTML += createProductCard(item, `reveal-delay-${(i % 5) + 1}`);
+  if (menuCategoryGrid) {
+    const categories = [
+      { key: 'cakes', name: 'Cakes', icon: 'fas fa-birthday-cake', data: cakesMenu, color: '#e8899e' },
+      { key: 'cupcakes', name: 'Cup Cakes', icon: 'fas fa-cookie', data: cupCakes, color: '#f5a623' },
+      { key: 'jarcakes', name: 'Jar Cakes', icon: 'fas fa-jar-wheat', data: jarCakes, color: '#8b6f47' },
+      { key: 'chocolates', name: 'Chocolates', icon: 'fas fa-candy-cane', data: chocolates, color: '#6b3a2a' },
+      { key: 'mousse', name: 'Mousse Cup', icon: 'fas fa-ice-cream', data: mousseCup, color: '#c76b82' },
+      { key: 'brownies', name: 'Brownies', icon: 'fas fa-cookie-bite', data: brownies, color: '#5c3317' }
+    ];
+
+    let activeCategory = null;
+
+    // Render category containers
+    categories.forEach(cat => {
+      const container = document.createElement('div');
+      container.className = 'menu-category-container reveal';
+      container.dataset.category = cat.key;
+      container.innerHTML = `
+        <div class="menu-category-icon" style="background: ${cat.color}">
+          <i class="${cat.icon}"></i>
+        </div>
+        <div class="menu-category-info">
+          <h3>${cat.name}</h3>
+          <span class="menu-category-count">${cat.data.length} ${cat.data.length === 1 ? 'item' : 'items'}</span>
+        </div>
+        <div class="menu-category-arrow">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      `;
+
+      container.addEventListener('click', () => {
+        // Hide the category grid to act like a new page
+        menuCategoryGrid.style.display = 'none';
+        activeCategory = cat.key;
+
+        // Render product cards
+        let cardsHtml = `<div class="menu-expanded-header reveal">
+          <h2>${cat.name}</h2>
+          <button class="menu-close-btn" id="closeExpanded"><i class="fas fa-arrow-left"></i> Back to Categories</button>
+        </div>
+        <div class="row">`;
+        cat.data.forEach((item, i) => {
+          cardsHtml += createProductCard(item, `reveal-delay-${(i % 5) + 1}`);
+        });
+        cardsHtml += '</div>';
+        menuExpandedArea.innerHTML = cardsHtml;
+        menuExpandedArea.classList.add('active');
+
+        // Close/Back button to return to categories
+        document.getElementById('closeExpanded').addEventListener('click', (e) => {
+          e.stopPropagation();
+          activeCategory = null;
+          menuExpandedArea.innerHTML = '';
+          menuExpandedArea.classList.remove('active');
+          menuCategoryGrid.style.display = 'grid'; // Restore grid
+          // Scroll back up slightly
+          setTimeout(() => {
+            document.getElementById('menu-categories').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 50);
+        });
+
+        // Scroll top to simulate new page load
+        setTimeout(() => {
+          document.getElementById('menu-categories').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          revealOnScroll();
+        }, 50);
       });
-    }
-  });
+
+      menuCategoryGrid.appendChild(container);
+    });
+  }
 
   // Re-check reveals after dynamic content is added
   setTimeout(revealOnScroll, 100);
@@ -436,4 +580,209 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
+
+  // ---------- Global Universal Native Search ----------
+  const searchInputs = document.querySelectorAll('.global-search-input');
+  const voiceBtns = document.querySelectorAll('.global-voice-btn');
+
+  // Build a single universal product array
+  const allProducts = [
+    ...(typeof cakes !== 'undefined' ? cakes : []).map(p => ({...p, category: 'Cakes', link: 'cakes.html'})),
+    ...(typeof brownies !== 'undefined' ? brownies : []).map(p => ({...p, category: 'Brownies', link: 'brownies.html'})),
+    ...(typeof cupCakes !== 'undefined' ? cupCakes : []).map(p => ({...p, category: 'Cup Cakes', link: 'menu.html#cupcakes'})),
+    ...(typeof jarCakes !== 'undefined' ? jarCakes : []).map(p => ({...p, category: 'Jar Cakes', link: 'menu.html#jarcakes'})),
+    ...(typeof chocolates !== 'undefined' ? chocolates : []).map(p => ({...p, category: 'Chocolates', link: 'menu.html#chocolates'})),
+    ...(typeof mousseCup !== 'undefined' ? mousseCup : []).map(p => ({...p, category: 'Mousse Cup', link: 'menu.html#moussecup'}))
+  ];
+
+  // Remove duplicates
+  const uniqueProducts = [];
+  const seenNames = new Set();
+  allProducts.forEach(product => {
+    if (!seenNames.has(product.name)) {
+      seenNames.add(product.name);
+      uniqueProducts.push(product);
+    }
+  });
+
+  // Create UI element for native page search results
+  const searchResultPageSection = document.createElement('section');
+  searchResultPageSection.id = 'globalSearchNativeSection';
+  searchResultPageSection.className = 'py-5 bg-white d-none'; 
+  searchResultPageSection.style.minHeight = '100vh';
+  searchResultPageSection.style.paddingTop = '120px'; // clear fixed navbar
+  
+  searchResultPageSection.innerHTML = `
+    <div class="container" style="margin-top: 50px;">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-8 text-center text-md-start">
+          <h2 class="fw-bold mb-2 h1" style="font-family: var(--font-heading);">Search <span class="text-rose">Results</span></h2>
+          <p class="text-muted mb-0 fs-5" id="nativeSearchCount">Found 0 products</p>
+        </div>
+        <div class="col-md-4 text-center text-md-end mt-4 mt-md-0">
+          <button class="btn btn-outline-dark rounded-pill px-4 py-2 fw-bold shadow-sm" id="closeNativeSearch">
+            <i class="fas fa-arrow-left me-2"></i>Back to Page
+          </button>
+        </div>
+      </div>
+      <div class="row" id="nativeSearchResultsGrid"></div>
+    </div>
+  `;
+  document.body.appendChild(searchResultPageSection);
+
+  const nativeSearchResultsGrid = document.getElementById('nativeSearchResultsGrid');
+  const nativeSearchCount = document.getElementById('nativeSearchCount');
+  const closeNativeSearch = document.getElementById('closeNativeSearch');
+
+  function openNativeSearch() {
+    searchResultPageSection.classList.remove('d-none');
+    
+    // Hide all original content sections safely (excluding navbar, script, and search UI itself)
+    const children = document.body.children;
+    for (let i = 0; i < children.length; i++) {
+      const el = children[i];
+      if (el.tagName !== 'NAV' && el.tagName !== 'SCRIPT' && el.id !== 'globalSearchNativeSection') {
+        if (!el.dataset.originalDisplaySet) {
+          el.dataset.originalDisplay = el.style.display || '';
+          el.dataset.originalDisplaySet = 'true';
+        }
+        el.style.display = 'none';
+      }
+    }
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }
+
+  function closeNativeSearchUI() {
+    searchResultPageSection.classList.add('d-none');
+    
+    // Restore original page content
+    const children = document.body.children;
+    for (let i = 0; i < children.length; i++) {
+      const el = children[i];
+      if (el.dataset.originalDisplaySet === 'true') {
+        el.style.display = el.dataset.originalDisplay;
+      }
+    }
+    
+    // Clear all search inputs
+    searchInputs.forEach(inp => inp.value = '');
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Return to top nicely
+  }
+
+  closeNativeSearch.addEventListener('click', closeNativeSearchUI);
+
+  function renderNativeResults(query) {
+    if (!query || query.trim().length === 0) {
+      nativeSearchResultsGrid.innerHTML = `
+        <div class="col-12 text-center py-5">
+          <h4 class="text-muted" style="font-family: var(--font-heading);">Start typing to search across all products...</h4>
+        </div>
+      `;
+      nativeSearchCount.textContent = 'Ready to search';
+      return;
+    }
+
+    const q = query.toLowerCase();
+    const filtered = uniqueProducts.filter(p => 
+      p.name.toLowerCase().includes(q) || 
+      (p.description && p.description.toLowerCase().includes(q)) ||
+      p.category.toLowerCase().includes(q)
+    );
+
+    nativeSearchCount.textContent = `Showing exact matches for "${query}" (${filtered.length} products)`;
+
+    if (filtered.length === 0) {
+      nativeSearchResultsGrid.innerHTML = `
+        <div class="col-12 text-center py-5 mt-5">
+          <i class="fas fa-search-minus fa-4x mb-4 text-muted" style="opacity: 0.2;"></i>
+          <h3 class="text-dark fw-bold" style="font-family: var(--font-heading);">No products found</h3>
+          <p class="text-muted fs-5 mt-2">Try adjusting your search terms or exploring our menu.</p>
+        </div>
+      `;
+    } else {
+      let html = '';
+      filtered.forEach(item => {
+        // Reuse the exact same function that renders products on normal pages
+        // to guarantee identical CSS styling, pricing badge, and WhatsApp buttons.
+        // We inject 'filterable-item active' to prevent initial reveal delay hiding.
+        html += createProductCard(item, 'filterable-item active');
+      });
+      nativeSearchResultsGrid.innerHTML = html;
+    }
+  }
+
+  // Handle escape key to close search
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !searchResultPageSection.classList.contains('d-none')) {
+      closeNativeSearchUI();
+    }
+  });
+
+  searchInputs.forEach(input => {
+    input.addEventListener('input', (e) => {
+      const q = e.target.value;
+      if (q.trim().length > 0) openNativeSearch();
+      else closeNativeSearchUI();
+      
+      renderNativeResults(q);
+
+      // Sync inputs across desktop/mobile
+      searchInputs.forEach(inp => {
+        if (inp !== input) inp.value = q;
+      });
+    });
+
+    // Opening click directly into populated input
+    input.addEventListener('click', (e) => {
+      if (e.target.value.trim().length > 0) {
+        openNativeSearch();
+        renderNativeResults(e.target.value);
+      }
+    });
+  });
+
+  // Voice Search
+  if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'en-IN';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    voiceBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (btn.classList.contains('listening')) {
+          recognition.stop();
+        } else {
+          try {
+            recognition.start();
+            voiceBtns.forEach(b => b.classList.add('listening'));
+            searchInputs.forEach(input => input.placeholder = 'Listening...');
+          } catch(err) {
+            console.error("Speech recognition error:", err);
+          }
+        }
+      });
+    });
+
+    recognition.onresult = (e) => {
+      const transcript = e.results[0][0].transcript;
+      searchInputs.forEach(inp => inp.value = transcript);
+      openNativeSearch();
+      renderNativeResults(transcript);
+      resetVoiceUI();
+    };
+
+    recognition.onerror = resetVoiceUI;
+    recognition.onend = resetVoiceUI;
+
+    function resetVoiceUI() {
+      voiceBtns.forEach(b => b.classList.remove('listening'));
+      searchInputs.forEach(input => input.placeholder = 'Search for cakes...');
+    }
+  } else {
+    voiceBtns.forEach(btn => btn.style.display = 'none');
+  }
+
 });

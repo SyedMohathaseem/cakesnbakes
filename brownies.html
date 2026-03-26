@@ -24,40 +24,52 @@
 
   <!-- ========== Navbar ========== -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
-    <div class="container">
+    <div class="container flex-wrap flex-lg-nowrap">
       <a class="navbar-brand" href="index.html">
         <img src="logo2.png" alt="CakesnBakes" class="brand-logo"> CakesnBakes
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      
+      <!-- Desktop Permanent Search Bar -->
+      <div class="search-pill d-none d-lg-flex mx-auto" style="max-width: 350px; width: 100%;">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="global-search-input" placeholder="Search for cakes..." autocomplete="off">
+        <button class="voice-search-btn global-voice-btn" title="Search by Voice">
+          <i class="fas fa-microphone"></i>
+        </button>
+      </div>
+
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- Mobile Permanent Search Bar -->
+      <div class="w-100 d-lg-none mt-2 order-3">
+        <div class="search-pill">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" class="global-search-input" placeholder="Search for cakes..." autocomplete="off">
+          <button class="voice-search-btn global-voice-btn" title="Search by Voice">
+            <i class="fas fa-microphone"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse order-4 w-100 w-lg-auto mt-2 mt-lg-0" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cakes.html">Our Gallery</a>
+            <a class="nav-link" href="cakes.html">Cakes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="brownies.html">Brownies</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="menu.html">Menu ▾</a>
-            <div class="nav-dropdown-menu">
-              <a href="menu.html#cakes-section"><i class="fas fa-birthday-cake"></i> Cakes</a>
-              <a href="menu.html#cupcakes-section"><i class="fas fa-cookie"></i> Cup Cakes</a>
-              <a href="menu.html#jarcakes-section"><i class="fas fa-jar-wheat"></i> Jar Cakes</a>
-              <a href="menu.html#chocolates-section"><i class="fas fa-candy-cane"></i> Chocolates</a>
-              <a href="menu.html#mousse-section"><i class="fas fa-ice-cream"></i> Mousse Cup</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#reviews">Reviews</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#contact">Contact</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
         </ul>
       </div>
@@ -65,7 +77,7 @@
   </nav>
 
   <!-- ========== All Brownies Section ========== -->
-  <section class="section section-alt" id="all-brownies" style="padding-top: 140px;">
+  <section class="section section-alt" id="all-brownies">
     <div class="container">
       <div class="section-title reveal">
         <h1>Our Brownies</h1>
@@ -76,6 +88,44 @@
       </div>
       <div class="view-all-wrapper reveal" style="margin-top: 40px;">
         <a href="index.html" class="btn-view-all"><i class="fas fa-arrow-left"></i> Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Contact Section ========== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you! Reach out to place an order or just say hello</p>
+      </div>
+      <div class="contact-card reveal reveal-delay-2">
+        <h3>Let's Talk 💬</h3>
+        <p>Order your favourite treats or ask us anything</p>
+        <div class="contact-methods">
+          <a href="https://wa.me/919597485022?text=Hi%2C%20I%20want%20to%20place%20an%20order%20from%20CakesnBakes" 
+             target="_blank" rel="noopener" class="contact-method">
+            <i class="fab fa-whatsapp"></i>
+            <div class="contact-method-info">
+              <span class="label">WhatsApp</span>
+              <span class="value">+91 95974 85022</span>
+            </div>
+          </a>
+          <a href="tel:+919597485022" class="contact-method">
+            <i class="fas fa-phone"></i>
+            <div class="contact-method-info">
+              <span class="label">Call Us</span>
+              <span class="value">+91 95974 85022</span>
+            </div>
+          </a>
+          <a href="https://instagram.com/cakes_n_bakessss" target="_blank" rel="noopener" class="contact-method">
+            <i class="fab fa-instagram"></i>
+            <div class="contact-method-info">
+              <span class="label">Instagram</span>
+              <span class="value">@cakes_n_bakessss</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -108,7 +158,7 @@
       </div>
       <hr class="footer-divider">
       <p class="footer-copyright">
-        &copy; <span id="year"></span> <span>CakesnBakes</span>. All rights reserved.
+        &copy; <span id="year"></span> <span>CakesnBakes</span>. All rights reserved. | Developed by <a href="mailto:ashpbt123@gmail.com" style="color: var(--accent-rose); font-weight: 600; text-decoration: none;">ASHTech</a>
       </p>
     </div>
   </footer>
@@ -127,20 +177,20 @@
       <span>Home</span>
     </a>
     <a href="cakes.html" class="bottom-nav-item">
-      <i class="fas fa-images"></i>
-      <span>Gallery</span>
+      <i class="fas fa-birthday-cake"></i>
+      <span>Cakes</span>
+    </a>
+    <a href="menu.html" class="bottom-nav-item bottom-nav-action">
+      <i class="fas fa-utensils"></i>
+      <span>Menu</span>
     </a>
     <a href="brownies.html" class="bottom-nav-item active">
       <i class="fas fa-cookie-bite"></i>
       <span>Brownies</span>
     </a>
-    <a href="menu.html" class="bottom-nav-item">
-      <i class="fas fa-utensils"></i>
-      <span>Menu</span>
-    </a>
-    <a href="index.html#contact" class="bottom-nav-item">
-      <i class="fas fa-envelope"></i>
-      <span>Contact</span>
+    <a href="gallery.html" class="bottom-nav-item">
+      <i class="fas fa-images"></i>
+      <span>Gallery</span>
     </a>
   </nav>
 

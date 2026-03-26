@@ -36,40 +36,52 @@
 
   <!-- ========== Navbar ========== -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
-    <div class="container">
-      <a class="navbar-brand" href="#">
+    <div class="container flex-wrap flex-lg-nowrap">
+      <a class="navbar-brand" href="index.html">
         <img src="logo2.png" alt="CakesnBakes" class="brand-logo"> CakesnBakes
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      
+      <!-- Desktop Permanent Search Bar -->
+      <div class="search-pill d-none d-lg-flex mx-auto" style="max-width: 350px; width: 100%;">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="global-search-input" placeholder="Search for cakes..." autocomplete="off">
+        <button class="voice-search-btn global-voice-btn" title="Search by Voice">
+          <i class="fas fa-microphone"></i>
+        </button>
+      </div>
+
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- Mobile Permanent Search Bar -->
+      <div class="w-100 d-lg-none mt-2 order-3">
+        <div class="search-pill">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" class="global-search-input" placeholder="Search for cakes..." autocomplete="off">
+          <button class="voice-search-btn global-voice-btn" title="Search by Voice">
+            <i class="fas fa-microphone"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse order-4 w-100 w-lg-auto mt-2 mt-lg-0" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cakes.html">Our Gallery</a>
+            <a class="nav-link" href="cakes.html">Cakes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="brownies.html">Brownies</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="menu.html">Menu ▾</a>
-            <div class="nav-dropdown-menu">
-              <a href="menu.html#cakes-section"><i class="fas fa-birthday-cake"></i> Cakes</a>
-              <a href="menu.html#cupcakes-section"><i class="fas fa-cookie"></i> Cup Cakes</a>
-              <a href="menu.html#jarcakes-section"><i class="fas fa-jar-wheat"></i> Jar Cakes</a>
-              <a href="menu.html#chocolates-section"><i class="fas fa-candy-cane"></i> Chocolates</a>
-              <a href="menu.html#mousse-section"><i class="fas fa-ice-cream"></i> Mousse Cup</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#reviews">Reviews</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
         </ul>
       </div>
@@ -121,7 +133,7 @@
         <!-- Gallery cards rendered dynamically via JS -->
       </div>
       <div class="view-all-wrapper reveal reveal-delay-3">
-        <a href="cakes.html" class="btn-view-all">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+        <a href="gallery.html" class="btn-view-all">View Full Gallery <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
@@ -379,7 +391,7 @@
       </div>
       <hr class="footer-divider">
       <p class="footer-copyright">
-        &copy; <span id="year"></span> <span>CakesnBakes</span>. All rights reserved.
+        &copy; <span id="year"></span> <span>CakesnBakes</span>. All rights reserved. | Developed by <a href="mailto:ashpbt123@gmail.com" style="color: var(--accent-rose); font-weight: 600; text-decoration: none;">ASHTech</a>
       </p>
     </div>
   </footer>
@@ -398,20 +410,20 @@
       <span>Home</span>
     </a>
     <a href="cakes.html" class="bottom-nav-item">
-      <i class="fas fa-images"></i>
-      <span>Gallery</span>
+      <i class="fas fa-birthday-cake"></i>
+      <span>Cakes</span>
+    </a>
+    <a href="menu.html" class="bottom-nav-item bottom-nav-action">
+      <i class="fas fa-utensils"></i>
+      <span>Menu</span>
     </a>
     <a href="brownies.html" class="bottom-nav-item">
       <i class="fas fa-cookie-bite"></i>
       <span>Brownies</span>
     </a>
-    <a href="menu.html" class="bottom-nav-item">
-      <i class="fas fa-utensils"></i>
-      <span>Menu</span>
-    </a>
-    <a href="#contact" class="bottom-nav-item" data-section="contact">
-      <i class="fas fa-envelope"></i>
-      <span>Contact</span>
+    <a href="gallery.html" class="bottom-nav-item">
+      <i class="fas fa-images"></i>
+      <span>Gallery</span>
     </a>
   </nav>
 
