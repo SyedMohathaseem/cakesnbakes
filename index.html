@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CakesnBakes — Freshly baked cakes, cupcakes, brownies & more, delivered to your doorstep. Order now on WhatsApp!">
+  <meta name="keywords" content="cakes, brownies, bakery, cupcakes, mousse cakes, jar cakes, order cakes online, CakesnBakes">
+  <meta name="author" content="CakesnBakes">
+  <title>CakesnBakes — Delicious Cakes Made With Love 🎂</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="logo.png" type="image/png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== Page Loader ========== -->
+  <div class="page-loader">
+    <div class="loader-content">
+      <div class="loader-brand"><img src="logo.png" alt="CakesnBakes" class="loader-logo"> CakesnBakes</div>
+      <div class="loader-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Navbar ========== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="CakesnBakes" class="brand-logo"> CakesnBakes
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cakes">Cakes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#brownies">Brownies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== Hero Section ========== -->
+  <section class="hero-section" id="home">
+    <div class="hero-shapes">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Delicious Cakes <br>Made With Love <span class="hero-emoji">🎂</span></h1>
+        <p>Freshly baked happiness delivered to your doorstep</p>
+        <a href="#cakes" class="btn-order">
+          <i class="fas fa-shopping-bag"></i> Order Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Cakes Section ========== -->
+  <section class="section" id="cakes">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Our Cakes</h2>
+        <p>Baked fresh daily with the finest ingredients and lots of love</p>
+      </div>
+      <div class="row" id="cakes-grid">
+        <!-- Cards rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Brownies Section ========== -->
+  <section class="section section-alt" id="brownies">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Our Brownies</h2>
+        <p>Rich, fudgy, and irresistibly chocolatey treats</p>
+      </div>
+      <div class="row justify-content-center" id="brownies-grid">
+        <!-- Cards rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Menu Section ========== -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Our Menu</h2>
+        <p>Browse our full menu with prices — something sweet for everyone!</p>
+      </div>
+      <div class="menu-images reveal reveal-delay-2">
+        <div class="menu-img-wrapper">
+          <img src="img/IMG-20260324-WA0014.jpg" alt="CakesnBakes Full Menu" class="menu-full-img" loading="lazy">
+        </div>
+        <div class="menu-img-wrapper">
+          <img src="img/IMG-20260324-WA0013.jpg" alt="CakesnBakes Best Sellers" class="menu-full-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Reviews Section ========== -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Customer Reviews</h2>
+        <p>What our happy customers have to say about our cakes & brownies 💕</p>
+      </div>
+      <div class="reviews-carousel reveal reveal-delay-2">
+        <div class="reviews-track">
+          <div class="review-card"><img src="img/IMG-20260324-WA0000.jpg" alt="Customer Review" loading="lazy"></div>
+          <div class="review-card"><img src="img/IMG-20260324-WA0001.jpg" alt="Customer Review" loading="lazy"></div>
+          <div class="review-card"><img src="img/IMG-20260324-WA0002.jpg" alt="Customer Review" loading="lazy"></div>
+          <div class="review-card"><img src="img/IMG-20260324-WA0003.jpg" alt="Customer Review" loading="lazy"></div>
+          <div class="review-card"><img src="img/IMG-20260324-WA0004.jpg" alt="Customer Review" loading="lazy"></div>
+          <div class="review-card"><img src="img/IMG-20260324-WA0005.jpg" alt="Customer Review" loading="lazy"></div>
+          <div class="review-card"><img src="img/IMG-20260324-WA0006.jpg" alt="Customer Review" loading="lazy"></div>
+          <div class="review-card"><img src="img/IMG-20260324-WA0007.jpg" alt="Customer Review" loading="lazy"></div>
+          <div class="review-card"><img src="img/IMG-20260324-WA0008.jpg" alt="Customer Review" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Contact Section ========== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you! Reach out to place an order or just say hello</p>
+      </div>
+      <div class="contact-card reveal reveal-delay-2">
+        <h3>Let's Talk 💬</h3>
+        <p>Order your favourite treats or ask us anything</p>
+        <div class="contact-methods">
+          <a href="https://wa.me/919597485022?text=Hi%2C%20I%20want%20to%20place%20an%20order%20from%20CakesnBakes" 
+             target="_blank" rel="noopener" class="contact-method">
+            <i class="fab fa-whatsapp"></i>
+            <div class="contact-method-info">
+              <span class="label">WhatsApp</span>
+              <span class="value">+91 95974 85022</span>
+            </div>
+          </a>
+          <a href="tel:+919597485022" class="contact-method">
+            <i class="fas fa-phone"></i>
+            <div class="contact-method-info">
+              <span class="label">Call Us</span>
+              <span class="value">+91 95974 85022</span>
+            </div>
+          </a>
+          <a href="https://instagram.com/cakes_n_bakessss" target="_blank" rel="noopener" class="contact-method">
+            <i class="fab fa-instagram"></i>
+            <div class="contact-method-info">
+              <span class="label">Instagram</span>
+              <span class="value">@cakes_n_bakessss</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="footer-brand">
+            <img src="logo.png" alt="CakesnBakes" class="footer-logo"> CakesnBakes
+          </div>
+          <p class="footer-tagline">Baking smiles, one cake at a time ✨</p>
+          <div class="footer-contact">
+            <i class="fas fa-phone"></i>
+            <span>+91 95974 85022</span>
+          </div>
+          <div class="footer-social">
+            <a href="https://instagram.com/cakes_n_bakessss" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/919597485022" target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <p class="footer-tagline">Made with 🩷 for cake lovers everywhere</p>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <p class="footer-copyright">
+        &copy; <span id="year"></span> <span>CakesnBakes</span>. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ========== Floating WhatsApp Button ========== -->
+  <a href="https://wa.me/919597485022?text=Hi%2C%20I%20want%20to%20place%20an%20order%20from%20CakesnBakes" 
+     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip-text">Chat with us!</span>
+  </a>
+
+  <!-- ========== Mobile Bottom Navbar ========== -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#home" class="bottom-nav-item active" data-section="home">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#cakes" class="bottom-nav-item" data-section="cakes">
+      <i class="fas fa-birthday-cake"></i>
+      <span>Cakes</span>
+    </a>
+    <a href="#brownies" class="bottom-nav-item" data-section="brownies">
+      <i class="fas fa-cookie-bite"></i>
+      <span>Brownies</span>
+    </a>
+    <a href="#menu" class="bottom-nav-item" data-section="menu">
+      <i class="fas fa-utensils"></i>
+      <span>Menu</span>
+    </a>
+    <a href="#contact" class="bottom-nav-item" data-section="contact">
+      <i class="fas fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- ========== Back to Top Button ========== -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
