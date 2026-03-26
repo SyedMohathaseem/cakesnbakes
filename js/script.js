@@ -212,33 +212,66 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: 'Nutella Brownie',
       description: 'Rich, fudgy Nutella brownie dripping with hazelnut chocolate goodness — irresistibly indulgent!',
-      price: '₹1,050',
+      price: '₹1,400',
       image: 'img/1771153087995.png'
     },
     {
       name: 'Nutella & Biscoff Brownie',
       description: 'Loaded with creamy Nutella & crunchy Biscoff spread inside a deep cocoa batter — pure bliss.',
-      price: '₹1,050',
+      price: '₹1,400',
       image: 'img/1771152907690.png'
     },
     {
       name: 'Triple Chocolate Brownie & Blondies',
       description: 'The ultimate indulgence — dark, milk, and white chocolate fused into fudgy brownies and golden blondies.',
-      price: '₹1,050',
+      price: '₹1,400',
       image: 'img/1771152758090.png'
     }
   ];
 
-  // ---------- Render Product Cards ----------
+  // ---------- Menu Category Data ----------
+  const cakesMenu = [
+    { name: 'Vanilla Cake', description: 'Classic vanilla sponge cake with smooth buttercream frosting.', price: '₹1,000', image: '' },
+    { name: 'Strawberry Cake', description: 'Fresh strawberry flavoured cake with a fruity, sweet finish.', price: '₹1,000', image: '' },
+    { name: 'Butterscotch Cake', description: 'Rich butterscotch cake with crunchy caramel praline topping.', price: '₹1,000', image: '' },
+    { name: 'Black Currant Cake', description: 'Tangy black currant cake with a deep berry flavour.', price: '₹1,000', image: '' },
+    { name: 'Chocolate Cake', description: 'Moist, rich chocolate cake for all chocolate lovers.', price: '₹1,200', image: '' },
+    { name: 'Chocolate Truffle Cake', description: 'Indulgent chocolate truffle cake with a velvety ganache finish.', price: '₹1,400', image: '' },
+    { name: 'Lotus Biscoff Cake', description: 'Creamy Lotus Biscoff cake with caramelised biscuit crumble.', price: '₹1,400', image: '' },
+    { name: 'Nutella Cake', description: 'Heavenly Nutella hazelnut cake with a chocolatey spread layer.', price: '₹1,400', image: '' },
+    { name: 'Blueberry Cake', description: 'Delicate blueberry cake with a burst of fresh berry flavour.', price: '₹1,000', image: '' }
+  ];
+
+  const cupCakes = [
+    { name: 'Cup Cake', description: 'Freshly baked cup cakes available in multiple delicious varieties.', price: '₹30', image: '' }
+  ];
+
+  const jarCakes = [
+    { name: 'Jar Cake', description: 'Layered jar cake with cream and sponge — perfect on the go!', price: '₹120', image: '' }
+  ];
+
+  const chocolates = [
+    { name: 'Customised Chocolates', description: 'Beautifully customised chocolates for every occasion — perfect for gifting!', price: 'Starting from ₹130', image: '' }
+  ];
+
+  const mousseCup = [
+    { name: 'Mousse Cup', description: 'Light, fluffy, and creamy mousse cups in irresistible flavours.', price: 'Starting from ₹40', image: '' }
+  ];
+
+  // ---------- Render Product Cards (with price + order button) ----------
   function createProductCard(item, delayClass) {
     const whatsappMsg = encodeURIComponent(`Hi, I want to order ${item.name} from CakesnBakes`);
     const whatsappLink = `https://wa.me/919597485022?text=${whatsappMsg}`;
+
+    const imgHtml = item.image
+      ? `<img src="${item.image}" alt="${item.name}" loading="lazy">`
+      : `<div class="product-img-placeholder"><i class="fas fa-birthday-cake"></i></div>`;
 
     return `
       <div class="col-lg-4 col-md-6 mb-4 reveal ${delayClass}">
         <div class="product-card">
           <div class="product-img">
-            <img src="${item.image}" alt="${item.name}" loading="lazy">
+            ${imgHtml}
             <span class="price-badge">${item.price}</span>
           </div>
           <div class="product-body">
@@ -253,46 +286,45 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   }
 
-  // ---------- Home Page: Show limited cards + View All ----------
-  const cakesGrid = document.getElementById('cakes-grid');
-  if (cakesGrid) {
-    const homeLimit = 3;
+  // ---------- Render Gallery Cards (image + name only, no price/order) ----------
+  function createGalleryCard(item, delayClass) {
+    return `
+      <div class="col-lg-4 col-md-6 mb-4 reveal ${delayClass}">
+        <div class="gallery-card">
+          <div class="gallery-img">
+            <img src="${item.image}" alt="${item.name}" loading="lazy">
+          </div>
+          <div class="gallery-body">
+            <h5>${item.name}</h5>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  // ---------- Home Page: Cakes product cards from cakesMenu ----------
+  const homeCakesGrid = document.getElementById('home-cakes-grid');
+  if (homeCakesGrid) {
+    cakesMenu.forEach((cake, i) => {
+      homeCakesGrid.innerHTML += createProductCard(cake, `reveal-delay-${(i % 5) + 1}`);
+    });
+  }
+
+  // ---------- Home Page: Gallery cards ----------
+  const galleryGrid = document.getElementById('gallery-grid');
+  if (galleryGrid) {
+    const homeLimit = 6;
     const cakesToShow = cakes.slice(0, homeLimit);
     cakesToShow.forEach((cake, i) => {
-      cakesGrid.innerHTML += createProductCard(cake, `reveal-delay-${(i % 5) + 1}`);
+      galleryGrid.innerHTML += createGalleryCard(cake, `reveal-delay-${(i % 5) + 1}`);
     });
-    // Add "View All" button
-    if (cakes.length > homeLimit) {
-      cakesGrid.insertAdjacentHTML('afterend',
-        `<div class="view-all-wrapper reveal reveal-delay-3">
-           <a href="cakes.html" class="btn-view-all">View All Cakes <i class="fas fa-arrow-right"></i></a>
-         </div>`
-      );
-    }
   }
 
-  const browniesGrid = document.getElementById('brownies-grid');
-  if (browniesGrid) {
-    const homeLimit = 3;
-    const browniesToShow = brownies.slice(0, homeLimit);
-    browniesToShow.forEach((brownie, i) => {
-      browniesGrid.innerHTML += createProductCard(brownie, `reveal-delay-${(i % 5) + 1}`);
-    });
-    // Add "View All" button
-    if (brownies.length > homeLimit) {
-      browniesGrid.insertAdjacentHTML('afterend',
-        `<div class="view-all-wrapper reveal reveal-delay-3">
-           <a href="brownies.html" class="btn-view-all">View All Brownies <i class="fas fa-arrow-right"></i></a>
-         </div>`
-      );
-    }
-  }
-
-  // ---------- Dedicated Pages: Show all cards ----------
-  const allCakesGrid = document.getElementById('all-cakes-grid');
-  if (allCakesGrid) {
+  // ---------- Dedicated Pages ----------
+  const allGalleryGrid = document.getElementById('all-gallery-grid');
+  if (allGalleryGrid) {
     cakes.forEach((cake, i) => {
-      allCakesGrid.innerHTML += createProductCard(cake, `reveal-delay-${(i % 5) + 1}`);
+      allGalleryGrid.innerHTML += createGalleryCard(cake, `reveal-delay-${(i % 5) + 1}`);
     });
   }
 
@@ -303,6 +335,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---------- Menu Page: Render all categories ----------
+  const menuCategories = [
+    { id: 'cakes-menu-grid', data: cakesMenu },
+    { id: 'cupcakes-grid', data: cupCakes },
+    { id: 'jarcakes-grid', data: jarCakes },
+    { id: 'chocolates-grid', data: chocolates },
+    { id: 'mousse-grid', data: mousseCup }
+  ];
+
+  menuCategories.forEach(cat => {
+    const grid = document.getElementById(cat.id);
+    if (grid) {
+      cat.data.forEach((item, i) => {
+        grid.innerHTML += createProductCard(item, `reveal-delay-${(i % 5) + 1}`);
+      });
+    }
+  });
+
   // Re-check reveals after dynamic content is added
   setTimeout(revealOnScroll, 100);
 
@@ -310,5 +360,80 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
+  }
+
+  // ---------- Testimonial Carousel ----------
+  const testimonialTrack = document.getElementById('testimonialTrack');
+  const testimonialDots = document.querySelectorAll('.testimonial-dot');
+  const testimonialPrev = document.getElementById('testimonialPrev');
+  const testimonialNext = document.getElementById('testimonialNext');
+
+  if (testimonialTrack && testimonialDots.length > 0) {
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll('.testimonial-slide').length;
+    let autoplayInterval;
+
+    function goToSlide(index) {
+      if (index < 0) index = totalSlides - 1;
+      if (index >= totalSlides) index = 0;
+      currentSlide = index;
+      testimonialTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+      
+      // Update dots
+      testimonialDots.forEach(dot => dot.classList.remove('active'));
+      testimonialDots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentSlide - 1);
+    }
+
+    // Autoplay
+    function startAutoplay() {
+      autoplayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoplay() {
+      clearInterval(autoplayInterval);
+    }
+
+    startAutoplay();
+
+    // Pause on hover
+    const carousel = document.getElementById('testimonialCarousel');
+    if (carousel) {
+      carousel.addEventListener('mouseenter', stopAutoplay);
+      carousel.addEventListener('mouseleave', startAutoplay);
+    }
+
+    // Dot navigation
+    testimonialDots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        stopAutoplay();
+        goToSlide(parseInt(dot.dataset.slide));
+        startAutoplay();
+      });
+    });
+
+    // Arrow navigation
+    if (testimonialPrev) {
+      testimonialPrev.addEventListener('click', () => {
+        stopAutoplay();
+        prevSlide();
+        startAutoplay();
+      });
+    }
+
+    if (testimonialNext) {
+      testimonialNext.addEventListener('click', () => {
+        stopAutoplay();
+        nextSlide();
+        startAutoplay();
+      });
+    }
   }
 });

@@ -418,6 +418,72 @@ img {
   font-weight: 300;
 }
 
+/* ---------- Product Image Placeholder ---------- */
+.product-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fff5f7, var(--primary-pink), #f7c5d0);
+  color: var(--accent-rose);
+  font-size: 3.5rem;
+}
+
+/* ---------- Navbar Dropdown ---------- */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 40px rgba(199, 107, 130, 0.18);
+  border: 1px solid rgba(255, 209, 218, 0.4);
+  padding: 10px 0;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+.nav-item.dropdown:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav-dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.nav-dropdown-menu a:hover {
+  background: #fff5f7;
+  color: var(--accent-deep);
+  padding-left: 24px;
+}
+
+.nav-dropdown-menu a i {
+  color: var(--accent-rose);
+  width: 18px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
 /* ---------- Product Cards ---------- */
 .product-card {
   background: var(--white);
@@ -579,6 +645,54 @@ img {
   transform: translateY(0);
 }
 
+/* ---------- Gallery Cards (Home Page) ---------- */
+.gallery-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+  border: 1px solid rgba(255, 209, 218, 0.25);
+  height: 100%;
+  position: relative;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(255, 209, 218, 0.5);
+}
+
+.gallery-card:hover .gallery-img img {
+  transform: scale(1.08);
+}
+
+.gallery-img {
+  position: relative;
+  overflow: hidden;
+  height: 260px;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-body {
+  padding: 16px 20px;
+  text-align: center;
+}
+
+.gallery-body h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--text-dark);
+}
+
 /* ---------- Menu Section ---------- */
 .menu-images {
   display: flex;
@@ -609,59 +723,184 @@ img {
   display: block;
 }
 
-/* ---------- Reviews Section ---------- */
-.reviews-carousel {
+/* ---------- Testimonial Carousel ---------- */
+.testimonial-carousel {
   position: relative;
   overflow: hidden;
+  padding: 0 50px;
 }
 
-.reviews-track {
+.testimonial-track {
   display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding: 8px 4px 16px;
-  scrollbar-width: thin;
-  scrollbar-color: var(--primary-pink-dark) transparent;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
-.reviews-track::-webkit-scrollbar {
-  height: 6px;
+.testimonial-slide {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 10px 4px;
 }
 
-.reviews-track::-webkit-scrollbar-thumb {
-  background: var(--primary-pink-dark);
-  border-radius: 50px;
-}
-
-.reviews-track::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.review-card {
-  flex: 0 0 220px;
-  width: 220px;
-  height: 300px;
-  scroll-snap-align: start;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+.testimonial-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 30px 28px 24px;
+  box-shadow: 0 4px 24px rgba(199, 107, 130, 0.1);
+  border: 1px solid rgba(255, 209, 218, 0.3);
   transition: var(--transition);
   position: relative;
-}
-
-.review-card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
-}
-
-.review-card img {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  object-fit: cover;
-  object-position: top;
-  display: block;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(199, 107, 130, 0.18);
+  border-color: rgba(255, 209, 218, 0.6);
+}
+
+.testimonial-quote {
+  color: var(--primary-pink-dark);
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  opacity: 0.5;
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+
+.testimonial-stars i {
+  color: #f5a623;
+  font-size: 0.85rem;
+}
+
+.testimonial-text {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 209, 218, 0.3);
+}
+
+.testimonial-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-pink), var(--accent-rose));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial-name {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.testimonial-badge {
+  font-size: 0.72rem;
+  color: #28a745;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  letter-spacing: 0.3px;
+}
+
+.testimonial-badge i {
+  font-size: 0.7rem;
+}
+
+/* Testimonial Navigation Dots */
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.testimonial-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-pink-dark);
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.testimonial-dot.active {
+  background: linear-gradient(135deg, var(--accent-rose), var(--accent-deep));
+  border-color: var(--accent-deep);
+  transform: scale(1.2);
+}
+
+.testimonial-dot:hover {
+  background: var(--primary-pink-dark);
+}
+
+/* Testimonial Arrow Controls */
+.testimonial-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 209, 218, 0.5);
+  background: var(--white);
+  color: var(--accent-deep);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(199, 107, 130, 0.12);
+}
+
+.testimonial-arrow:hover {
+  background: linear-gradient(135deg, var(--accent-rose), var(--accent-deep));
+  color: var(--white);
+  border-color: var(--accent-deep);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.testimonial-prev {
+  left: 0;
+}
+
+.testimonial-next {
+  right: 0;
 }
 
 /* ---------- Floating WhatsApp Button ---------- */
@@ -1057,6 +1296,19 @@ img {
   .footer {
     padding-bottom: 80px;
   }
+
+  .testimonial-slide {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .testimonial-slide .testimonial-card:nth-child(3) {
+    display: none;
+  }
+
+  .testimonial-carousel {
+    padding: 0 48px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1100,6 +1352,28 @@ img {
     right: 18px;
     width: 38px;
     height: 38px;
+  }
+
+  .testimonial-slide {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .testimonial-slide .testimonial-card:nth-child(2),
+  .testimonial-slide .testimonial-card:nth-child(3) {
+    display: none;
+  }
+
+  .testimonial-carousel {
+    padding: 0 12px;
+  }
+
+  .testimonial-arrow {
+    display: none;
+  }
+
+  .testimonial-card {
+    padding: 24px 20px 20px;
   }
 }
 
