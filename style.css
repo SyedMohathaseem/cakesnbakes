@@ -699,18 +699,7 @@ img {
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-body {
-  padding: 16px 20px;
-  text-align: center;
-}
 
-.gallery-body h5 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0;
-  font-family: var(--font-heading);
-  color: var(--text-dark);
-}
 
 /* ---------- Menu Section ---------- */
 .menu-images {

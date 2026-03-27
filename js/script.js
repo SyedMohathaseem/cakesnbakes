@@ -280,6 +280,1008 @@ document.addEventListener('DOMContentLoaded', () => {
       description: 'A beautifully crafted custom cake for special celebrations.',
       price: '₹1,200',
       image: 'img/IMG-20260112-WA0023.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/image.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241108_175022341.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241109_145925247.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241111_134804265.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241112_153825618.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241112_153836265.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241114_132553150.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241119_171014741.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241121_190306129.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241123_172452979.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241124_121029040.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241125_185100266.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241125_185704728.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241126_125850092.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241126_151814724.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241201_181127878.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241202_170223920.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241203_162457354.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241203_171423596.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241205_164000711.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241208_134010199.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241209_161542987.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241211_200927783.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241211_210231134.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241212_185822918.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241214_152833383.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241222_130228545.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241222_135439482.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241222_190945340.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241223_174346749.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241223_215343070.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241225_113517523.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241225_133000236.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241226_140542654.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241227_203809792.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241228_160235627.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241228_190803526.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20241229_123046168.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250102_113319321.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250103_153731241.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250103_183442007.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250104_202753086.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250106_173716128.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250108_114511068.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250111_164026981.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250111_230500289.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250111_230819062.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250111_230921023.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250113_203249366.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250114_200624506.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250115_165752774.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250116_155343516.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250116_171440256.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250118_122454022.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250118_194625525.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250123_204808148.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250124_153223731.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250125_123159000.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250126_145217981.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250127_133740369.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250128_161452605.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250130_113306086.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250130_131150313.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250205_121659997.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250207_180755006.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250208_183528821.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250209_103538981.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250209_111531506.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250209_155430667.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250211_140937403.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250211_174625827.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250212_174837485.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250212_201121221.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250215_180314210.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250216_085639688.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250216_164929257.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250222_154500130.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250223_181014910.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250223_182609473.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250224_170536799.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250224_215143742.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250226_160655891.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250227_172513694.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250305_160054985.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250305_190608046.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250306_201627613.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250314_202055654.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250315_195508106.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250323_163931991.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250330_164532646.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250331_160938751.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250331_162431428.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250406_174228328.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250413_201654389.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250416_165743194.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250416_165747907.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250416_165803301.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250416_165804806.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250416_170259834.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250416_170303902.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250419_115729787.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250421_155944819.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250422_212555500.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250426_175642012.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250501_144815470.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250501_161759100.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250512_163930940.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250513_174811976.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250513_183435943.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250521_140413991.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250521_165639798.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250524_190140904.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250525_183020218.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250526_213257038.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250609_193820839.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250610_143031524.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250611_141055019.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250611_195933358.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250613_164601145.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250613_205038938.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250614_192832276.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250615_180719789.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250617_173558368.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250620_172224829.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250622_144541769.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250623_193219488.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250624_173131657.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250626_183158329.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250630_175946379.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250708_183656523.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250710_165843754.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250710_200055656.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250713_153321302.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250714_200944752.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250720_162442530.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250722_161430203.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250727_174758970.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250731_190311353.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250802_114132797.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250808_181041448.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250809_155855626.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250809_203606385.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250810_171301015.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250810_183726398.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250815_191446362.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250817_165724799.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250820_184700936.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250821_183314043.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250827_191208230.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250829_192544290.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250831_145503677.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250831_161235701.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250905_154543798.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250905_205327331.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250907_155059131.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250907_181137974.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250908_160955275.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250911_133511123.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250913_170858232.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250914_185311469 copy.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250914_185311469.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250914_203652145.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250920_212105327.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250921_130750121.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250921_133433233.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250922_150559887.jpg'
+    },
+    {
+      name: 'Exquisite Custom Cake',
+      description: 'A beautifully handcrafted cake for your special celebrations.',
+      price: '₹1,000',
+      image: 'img/IMG_20250928_210505902.jpg'
     }
   ];
 
@@ -364,16 +1366,13 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   }
 
-  // ---------- Render Gallery Cards (image + name only, no price/order) ----------
+  // ---------- Render Gallery Cards (image only) ----------
   function createGalleryCard(item, delayClass) {
     return `
       <div class="col-lg-4 col-md-6 mb-4 reveal ${delayClass}">
         <div class="gallery-card">
           <div class="gallery-img">
-            <img src="${item.image}" alt="${item.name}" loading="lazy">
-          </div>
-          <div class="gallery-body">
-            <h5>${item.name}</h5>
+            <img src="${item.image}" alt="" loading="lazy">
           </div>
         </div>
       </div>
