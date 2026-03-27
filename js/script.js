@@ -137,12 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------- Product Cards Data ----------
   const cakes = [
-    {
-      name: 'Vanilla Engagement Cake',
-      description: 'Elegant 2-tier white vanilla cake with pearl decorations, baby\'s breath, and red roses — perfect for engagements.',
-      price: '₹1,000',
-      image: 'img/IMG-20260112-WA0014.jpg'
-    },
+
     {
       name: 'Chocolate Anniversary Cake',
       description: 'Stunning dark chocolate ganache cake with white cream, pearl sprinkles, and a "Happy Anniversary" topper.',
@@ -193,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: 'Rosette Engagement Cake',
-      description: 'Pink buttercream rosette engagement cake with pearls, yellow roses, and red fondant lettering.',
+      description: 'Pink freshcream rosette engagement cake with pearls, yellow roses, and red fondant lettering.',
       price: '₹1,000',
       image: 'img/IMG-20260112-WA0024.jpg'
     },
@@ -1308,7 +1303,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------- Menu Category Data ----------
   const cakesMenu = [
-    { name: 'Vanilla Cake', description: 'Classic vanilla sponge cake with smooth buttercream frosting.', price: '₹1,000', image: 'img/Vanila cake.jpg' },
+    { name: 'Vanilla Cake', description: 'Classic vanilla sponge cake with smooth freshcream frosting.', price: '₹1,000', image: 'img/Vanila cake.jpg', objectPosition: 'center bottom' },
     { name: 'Strawberry Cake', description: 'Fresh strawberry flavoured cake with a fruity, sweet finish.', price: '₹1,000', image: 'img/strawbery cake.jpg' },
     { name: 'Butterscotch Cake', description: 'Rich butterscotch cake with crunchy caramel praline topping.', price: '₹1,000', image: 'img/Butterscoch cake.jpg' },
     { name: 'Black Currant Cake', description: 'Tangy black currant cake with a deep berry flavour.', price: '₹1,000', image: 'img/Black Currant Cake.jpg' },
@@ -1343,8 +1338,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const whatsappMsg = encodeURIComponent(`Hi, I want to order ${item.name} from CakesnBakes`);
     const whatsappLink = `https://wa.me/919597485022?text=${whatsappMsg}`;
 
+    const imgStyle = item.objectPosition ? `style="object-position: ${item.objectPosition}"` : '';
     const imgHtml = item.image
-      ? `<img src="${item.image}" alt="${item.name}" loading="lazy">`
+      ? `<img src="${item.image}" alt="${item.name}" loading="lazy" ${imgStyle}>`
       : `<div class="product-img-placeholder"><i class="fas fa-birthday-cake"></i></div>`;
 
     return `
