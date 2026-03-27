@@ -1334,7 +1334,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   // ---------- Render Product Cards (with price + order button) ----------
-  function createProductCard(item, delayClass) {
+  function createProductCard(item, delayClass, appendKg = false) {
     const whatsappMsg = encodeURIComponent(`Hi, I want to order ${item.name} from CakesnBakes`);
     const whatsappLink = `https://wa.me/919597485022?text=${whatsappMsg}`;
 
@@ -1343,12 +1343,14 @@ document.addEventListener('DOMContentLoaded', () => {
       ? `<img src="${item.image}" alt="${item.name}" loading="lazy" ${imgStyle}>`
       : `<div class="product-img-placeholder"><i class="fas fa-birthday-cake"></i></div>`;
 
+    const displayPrice = appendKg && item.price && !item.price.includes('/kg') ? `${item.price}/kg` : item.price;
+
     return `
       <div class="col-lg-4 col-md-6 mb-4 reveal ${delayClass}">
         <div class="product-card">
           <div class="product-img">
             ${imgHtml}
-            <span class="price-badge">${item.price}</span>
+            <span class="price-badge">${displayPrice}</span>
           </div>
           <div class="product-body">
             <h5>${item.name}</h5>
@@ -1379,7 +1381,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const homeCakesGrid = document.getElementById('home-cakes-grid');
   if (homeCakesGrid) {
     cakesMenu.forEach((cake, i) => {
-      homeCakesGrid.innerHTML += createProductCard(cake, `reveal-delay-${(i % 5) + 1}`);
+      homeCakesGrid.innerHTML += createProductCard(cake, `reveal-delay-${(i % 5) + 1}`, true);
     });
   }
 
@@ -1397,7 +1399,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cakesProductGrid = document.getElementById('cakes-product-grid');
   if (cakesProductGrid) {
     cakesMenu.forEach((cake, i) => {
-      cakesProductGrid.innerHTML += createProductCard(cake, `reveal-delay-${(i % 5) + 1}`);
+      cakesProductGrid.innerHTML += createProductCard(cake, `reveal-delay-${(i % 5) + 1}`, true);
     });
   }
 
@@ -1412,7 +1414,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const allBrowniesGrid = document.getElementById('all-brownies-grid');
   if (allBrowniesGrid) {
     brownies.forEach((brownie, i) => {
-      allBrowniesGrid.innerHTML += createProductCard(brownie, `reveal-delay-${(i % 5) + 1}`);
+      allBrowniesGrid.innerHTML += createProductCard(brownie, `reveal-delay-${(i % 5) + 1}`, true);
     });
   }
 
@@ -1438,7 +1440,7 @@ document.addEventListener('DOMContentLoaded', () => {
       container.className = 'menu-category-container reveal';
       container.dataset.category = cat.key;
       container.innerHTML = `
-        <div class="menu-category-icon" style="background: ${cat.color}">
+      <div class="menu-category-icon" style="background: ${cat.color}">
           <i class="${cat.icon}"></i>
         </div>
         <div class="menu-category-info">
@@ -1459,11 +1461,13 @@ document.addEventListener('DOMContentLoaded', () => {
         let cardsHtml = `<div class="menu-expanded-header reveal">
           <h2>${cat.name}</h2>
           <button class="menu-close-btn" id="closeExpanded"><i class="fas fa-arrow-left"></i> Back to Categories</button>
-        </div>
-        <div class="row">`;
+        </div><div class="row">`;
+
         cat.data.forEach((item, i) => {
-          cardsHtml += createProductCard(item, `reveal-delay-${(i % 5) + 1}`);
+          const isKg = cat.key === 'cakes' || cat.key === 'brownies';
+          cardsHtml += createProductCard(item, `reveal-delay-${(i % 5) + 1}`, isKg);
         });
+
         cardsHtml += '</div>';
         menuExpandedArea.innerHTML = cardsHtml;
         menuExpandedArea.classList.add('active');
@@ -1700,7 +1704,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Reuse the exact same function that renders products on normal pages
         // to guarantee identical CSS styling, pricing badge, and WhatsApp buttons.
         // We inject 'filterable-item active' to prevent initial reveal delay hiding.
-        html += createProductCard(item, 'filterable-item active');
+        const isKg = ['Cakes', 'Brownies'].includes(item.category);
+        html += createProductCard(item, 'filterable-item active', isKg);
       });
       nativeSearchResultsGrid.innerHTML = html;
     }
